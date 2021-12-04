@@ -4,4 +4,4 @@
   become_user: root
   tasks:
     - name: Rebooting the cloud server
-            reboot:
+      reboot:
