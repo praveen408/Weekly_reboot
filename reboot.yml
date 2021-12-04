@@ -1,4 +1,7 @@
 ---
-- name: Reboot the machine with all defaults using Ansible
-  hosts: aws
-  reboot:
+- hosts: aws
+  become: true
+  become_user: root
+  tasks:
+    - name: Rebooting the cloud server
+            reboot:
