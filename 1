@@ -1,1 +1,8 @@
-hi
+---
+- hosts: localhost
+become: true
+become_user: root
+tasks:
+- name: Rebooting the server
+reboot:
+test_command: uptime
