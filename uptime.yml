@@ -1,0 +1,8 @@
+---
+- hosts: Praveen
+become: true
+become_user: root
+tasks:
+- name: upime
+upime:
+test_command: uptime
